@@ -1,0 +1,8 @@
+<template>
+    <template if:true={recordPageUrl}>
+        <lightning-formatted-url value={recordPageUrl} label={value} tooltip="View Contact"></lightning-formatted-url>
+    </template>
+    <template if:false={recordPageUrl}>
+        {value}
+    </template>
+</template>

@@ -1,0 +1,8 @@
+<template>
+    <div class="slds-grid">
+        <template if:true={_relatedRecords.length} for:each={_relatedRecords} for:item="record">
+            <lightning-badge key={record.id} class="slds-col slds-m-horizontal_small"
+                label={record.fields.Name.value}></lightning-badge>
+        </template>
+    </div>
+</template>
